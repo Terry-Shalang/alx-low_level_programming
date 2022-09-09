@@ -7,7 +7,7 @@
  *
  *  *
  *
- *  * Description: used puts() function to print string to output stream
+ *  * Return: returns 0 for success run
  *
  */
 
