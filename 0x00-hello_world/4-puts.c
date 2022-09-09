@@ -9,13 +9,9 @@
  *
  *  * Description: used puts() function to print string to output stream
  *
- *  * Return: function returns 0 always(success)
- *
- *
- *
  */
 
-int main(void) 
+int main(void)
 /*main function*/
 {
 
