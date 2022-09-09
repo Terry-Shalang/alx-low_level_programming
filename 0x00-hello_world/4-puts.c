@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 /**
- *
  *  * main - Entry point of the program
  *
  *  * takes no arg.
@@ -16,8 +15,8 @@
  *
  */
 
-int main(void) /*main func*/
-
+int main(void) 
+/*main function*/
 {
 
 		puts("\"Programming is like building a multilingual puzzle");
