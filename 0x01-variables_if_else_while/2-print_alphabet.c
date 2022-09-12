@@ -5,12 +5,9 @@
 
 /**
  *   * main - Entry point for the program
- *
- *   * takes no arguments, all statements are in the main function
- *
+ *   * takes no arguments
  *   *
- *
- *   * Description: Program that prints alphabets in lower case
+ *   * Description: program prints alphabets in lower case
  *
  *   * Return: program always returns 0(success)
  *
