@@ -15,7 +15,7 @@
  *
  *   * Return: program always return 0(success)
  *
- *             */
+ **/
 
 int main(void)
 
