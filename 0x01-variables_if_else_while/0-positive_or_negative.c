@@ -5,7 +5,7 @@
   * main- entry point to the program
   * no argument
   *
-  * Description: Deternine if passed int is positive or negative
+  * Description: Deternine if randomly generated int is positive or negative
   * Return: Program always return 0(success)
   */
 int main(void)
