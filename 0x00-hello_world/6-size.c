@@ -1,33 +1,24 @@
 #include <stdio.h>
 
-
-
 /**
- *
- *   * main -Entry point of the program o
+ *   * main -Entry point of the program
  *
  *   * function takes no arguments
  *
- *   *
- *
- *   * Description : program uses size() to output the size of data types
- *
  *   * Return: Program returns 0 for success
  *
- *             */
+ */
 
 int main(void)
-
+/*Description : program uses size() to output the size of data types*/
 {
+	long long int lli;
 
+	printf("Size of a char: %d byte(s)\n", (unsigned long)sizeof(char));
+	printf("Size of an int: %d byte(s)\n", (unsigned long)sizeof(int));
+	printf("Size of a long int: %d byte(s)\n", (unsigned long)sizeof(long int));
+	printf("Size of a long long int: %d byte(s)\n", (unsigned long)sizeof(lli));
+	printf("Size of a float: %d byte(s)\n", (unsigned long)sizeof(float));
 
-
- printf("Size of a char: %d byte(s)\n", (unsigned long)sizeof(char));
- printf("Size of an int: %d byte(s)\n", (unsigned long)sizeof(int));
- printf("Size of a long int: %d byte(s)\n", (unsigned long)sizeof(long int));	
- printf("Size of a long long int: %d byte(s)\n", (unsigned long)sizeof(long long int));
- printf("Size of a float: %d byte(s)\n", (unsigned long)sizeof(float));
-
-												return (0);
-
+	return (0);
 }
