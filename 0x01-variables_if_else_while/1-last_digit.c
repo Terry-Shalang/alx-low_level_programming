@@ -15,8 +15,7 @@
  *   * Description: program prints the last digit stored in variable n
  *
  *   * Return: Program always return 0 (success)
- *
- *   */
+ **/
 
 int main(void)
 
