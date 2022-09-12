@@ -10,7 +10,7 @@
 
   *
 
-  * Takes no arguments
+  * No arguments
 
   *
 
@@ -22,20 +22,20 @@ int main(void)
 
 {
 
-	int i;
+int i;
 
 
 
-	for (i = 0; i < 10; i++)
+for (i = 0; i < 10; i++)
 
-	{
+{
 
-		printf("%d", i);
+printf("%d", i);
 
-	}
+}
 
-	printf("\n");
+printf("\n");
 
-	return (0);
+return (0);
 
 }
