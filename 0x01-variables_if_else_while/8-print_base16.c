@@ -8,7 +8,7 @@
 
   *
 
-  * Takes no arguments
+  * No arguments
 
   *
 
@@ -20,30 +20,30 @@ int main(void)
 
 {
 
-	char nbase_16;
+char nbase_16;
 
 
 
-	for (nbase_16 = 48; nbase_16 <= 57; nbase_16++)
+for (nbase_16 = 48; nbase_16 <= 57; nbase_16++)
 
-	{
+{
 
-		putchar(nbase_16);
+putchar(nbase_16);
 
-	}
+}
 
-	for (nbase_16 = 97; nbase_16 <= 102; nbase_16++)
+for (nbase_16 = 97; nbase_16 <= 102; nbase_16++)
 
-	{
+{
 
-		putchar(nbase_16);
+putchar(nbase_16);
 
-	}
+}
 
-	putchar('\n');
+putchar('\n');
 
 
 
-	return (0);
+return (0);
 
 }
