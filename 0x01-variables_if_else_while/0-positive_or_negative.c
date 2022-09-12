@@ -1,11 +1,3 @@
-3YBwD3bWqMhnAE8
-
-https://www.airbnb.co.za/for-your-trip/HM48B3EHTN
-
-
-
-
-
 #include <stdio.h>
 
 #include <time.h>
@@ -29,41 +21,22 @@ https://www.airbnb.co.za/for-your-trip/HM48B3EHTN
 int main(void)
 
 {
-
-		int n;
-
-
-
-			srand(time(0));
-
-				n = rand() - RAND_MAX / 2;
-
-					if (n > 0)
-
-							{
-
-										printf("%d is positive\n", n);
-
-											}
-
-						else if (n == 0)
-
-								{
-
-											printf("%d is zero\n", n);
-
-												}
-
-							else
-
-									{
-
-
-
-												printf("%d is negative\n", n);
-
-													}
-
-								return (0);
+	int n;
+	
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if (n > 0)
+	{
+		printf("%d is positive\n", n);
+	}
+	else if (n == 0)
+	{
+		printf("%d is zero\n", n);
+	}
+	else
+	{
+		printf("%d is negative\n", n);
+	}
+	return (0);
 
 }
