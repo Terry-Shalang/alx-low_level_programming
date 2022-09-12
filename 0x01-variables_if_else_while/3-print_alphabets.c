@@ -5,47 +5,46 @@
 
 
 /**
+ * *   * main- Entry point of the program
  *
- *   * main- the Entry point of the program
+ *     * No arguments
  *
- *     * THe program Takes no arg.
+ *      *
  *
- *       *
+ *      * Description: prints a-z and A-Z using a for loop
  *
- *         * Despn: prints a-z and A-Z using a for loop
+ *      * Return: program always return 0(success)
  *
- *           * Return: program always return 0(success)
- *
- *             */
+ **/
 
 int main(void)
 
 {
 
-		char cl;
+char charLow;
 
-			char cu;
+char charUpper;
 
 
 
-				for (cl = 'a'; cl <= 'z'; cl++)
+for (charLow = 'a'; charLow <= 'z'; charLow++)
 
-						{
+{
 
-									putchar(cl);
+putchar(charLow);
 
-										}
+}
 
-					for (cu = 'A'; cu <= 'Z'; cu++)
+for (charUpper = 'A'; charUpper <= 'Z'; charUpper++)
 
-							{
+{
 
-										putchar(cu);
+putchar(charUpper);
 
-											}
+}
 
-						putchar('\n');
+putchar('\n');
 
-							return (0);
+return (0);
 
 }
