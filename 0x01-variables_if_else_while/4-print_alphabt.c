@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 #include <stdlib.h>
 
 
@@ -8,42 +7,42 @@
  *
  *   * main - Entry point of the program
  *
- *     * takes no arguments.
+ *   * No arguments.
  *
- *       *
+ *   *
  *
- *         * Despn: prints lowercase letters expt q and e
+ *   * Description: prints lowercase letters expt q and e
  *
- *           * Return: program always return 0(success)
+ *   * Return: program always return 0(success)
  *
- *             */
+ **/
 
 int main(void)
 
 {
 
-		char cl;
+char charLower;
 
 
 
-			for (cl = 'a'; cl <= 'z'; cl++)
+for (charLower = 'a'; charLower <= 'z'; charLower++)
 
-					{
+{
 
-								if (cl == 'q')
+if (charLower == 'q')
 
-												continue;
+continue;
 
-										else if (cl == 'e')
+else if (charLower == 'e')
 
-														continue;
+continue;
 
-												putchar(cl);
+putchar(charLower);
 
-													}
+}
 
-				putchar('\n');
+putchar('\n');
 
-					return (0);
+return (0);
 
 }

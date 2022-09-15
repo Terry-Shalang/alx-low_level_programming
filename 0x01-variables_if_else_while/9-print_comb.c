@@ -8,52 +8,52 @@
  *
  *   * main - entry point of the program
  *
- *     *
+ *   *
  *
- *       * Takes no arguments
+ *   * No arguments
  *
- *         *
+ *   *
  *
- *           * Return: program always returns 0(success)
+ *   * Return: program always returns 0(success)
  *
- *             */
+ **/
 
 int main(void)
 
 {
 
-		int num;
+int num;
 
 
 
-			for (num = 48; num <= 57; num++)
+for (num = 48; num <= 57; num++)
 
-					{
+{
 
-								putchar(num);
-
-
-
-										if (num == 57)
-
-													{
-
-																	break;
-
-																			}
-
-												putchar(',');
-
-														putchar(' ');
-
-															}
+putchar(num);
 
 
 
-				putchar('\n');
+if (num == 57)
+
+{
+
+break;
+
+}
+
+putchar(',');
+
+putchar(' ');
+
+}
 
 
 
-					return (0);
+putchar('\n');
+
+
+
+return (0);
 
 }

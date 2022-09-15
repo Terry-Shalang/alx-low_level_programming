@@ -8,36 +8,36 @@
  *
  *   * main - Entry point for the program
  *
- *     * takes no arguments, all statements are in the main function
+ *   * takes no arguments, all statements are in the main function
  *
- *       *
+ *   *
  *
- *         * Description: Program that prints alphabets in lower case
+ *   * Description: Program that prints alphabets in lower case
  *
- *           * Return: program always returns 0(success)
+ *   * Return: program always returns 0(success)
  *
- *             */
+ **/
 
 int main(void)
 
 {
 
-		char c = 'z';
+char c = 'z';
 
 
 
-			while (c >= 'a')
+while (c >= 'a')
 
-					{
+{
 
-								putchar(c);
+putchar(c);
 
-										c--;
+c--;
 
-											}
+}
 
-				putchar('\n');
+putchar('\n');
 
-					return (0);
+return (0);
 
 }
