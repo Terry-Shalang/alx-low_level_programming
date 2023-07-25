@@ -7,23 +7,19 @@
  * Return: String in reverse
  */
 
+#include <string.h>
+
 void rev_string(char *s)
 {
 	int len = strlen(s);
-	char rev[len + 1];
-	int i = len;
+	int i, j;
+	char temp;
 
-	for (; i >= 0; i--)
+	for (i = 0, j = len - 1; i < j; i++, j--)
 	{
-		rev[len - i] = s[i - 1];
-	}
-
-	rev[len] = '\0';
-
-	int j = 0;
-
-	for (; j <= len; j++)
-	{
-		s[j] = rev[j];
+		temp = s[i];
+		s[i] = s[j];
+		s[j] = temp;
 	}
 }
+

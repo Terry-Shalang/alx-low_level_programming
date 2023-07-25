@@ -4,13 +4,17 @@
  * _puts - prints a string, followed by a new line, to stdout
  * @str: string to print
  */
+#include <stdio.h>
+
 void _puts(char *str)
 {
-	int i = 0;
+	char *ptr = str;
 
-	for (; i < strlen(str); i++)
+	while (*ptr != '\0')
 	{
-		_putchar(*(str + i));
+		_putchar(*ptr);
+		ptr++;
 	}
 	_putchar('\n');
 }
+
