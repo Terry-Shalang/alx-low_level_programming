@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * _strcpy - copies the string pointed to by src, including the
@@ -10,7 +11,7 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	int len = _strlen(src);
+	int len = strlen(src);
 
 	int i = 0;
 
