@@ -9,21 +9,16 @@
  */
 char *string_toupper(char *str)
 {
-	int len_str = strlen(str);
+	int i = 0;
 
-	char lower[] = "abcdefghijklmnopqrstuvwxyz";
-	char upper[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-	for (int i = 0; i < len_str; i++)
+	while (str[i] != '\0')
 	{
-		for (int j = 0; j < 26; j++)
+		if (str[i] >= 'a' && str[i] <= 'z')
 		{
-			if (str[i] == lower[j])
-			{
-				str[i] = upper[j];
-				break;
-			}
+			str[i] = str[i] - ('a' - 'A');
 		}
+
+		i++;
 	}
 
 	return (str);
