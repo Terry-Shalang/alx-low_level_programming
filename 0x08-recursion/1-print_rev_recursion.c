@@ -2,7 +2,8 @@
 #include "main.h"
 
 /**
- *_print_rev_recursion- function that prints a string in reverse, followed by a new line
+ *_print_rev_recursion- function that prints a string in reverse,
+ followed by a new line
  *@s: string to print
  *
  * Return: None
