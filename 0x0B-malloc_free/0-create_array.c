@@ -7,13 +7,13 @@
  * and initializes it with a specific char.
  * @size: size of char array
  * @c: char to intialize the array
- * 
+ *
  * Return: address to array
  */
 char *create_array(unsigned int size, char c)
 {
-	char * prt;
-    unsigned int i;
+	char *prt;
+	unsigned int i;
 
 	if (size == 0)
 	{
@@ -26,7 +26,7 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	
+
 	for (i = 0; i < size; i++)
 	{
 		prt[i] = c;
