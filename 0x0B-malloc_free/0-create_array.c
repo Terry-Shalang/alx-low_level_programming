@@ -31,7 +31,6 @@ char *create_array(unsigned int size, char c)
 	{
 		prt[i] = c;
 	}
-	
 
 	return (prt);
 }
