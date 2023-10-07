@@ -3,23 +3,34 @@
 #include <stdlib.h>
 
 /**
- * create_array - function that creates an array of chars, 
+ * create_array - function that creates an array of chars,
  * and initializes it with a specific char.
  * @size: size of char array
  * @c: char to intialize the array
+ * 
+ * Return: address to array
  */
 char *create_array(unsigned int size, char c)
 {
     char * prt;
-    
+
     if (size == 0)
     {
-        return NULL;
+        return (NULL);
     }
 
     prt = (char *)malloc(sizeof(char) * size);
 
-    *prt = c;
+    if (prt == NULL)
+    {
+        return (NULL);
+    }
+    
+    for (unsigned int i = 0; i < size; i++)
+    {
+        prt[i] = c;
+    }
+    
 
-    return prt;
+    return (prt);
 }
