@@ -12,25 +12,27 @@
  */
 char *create_array(unsigned int size, char c)
 {
-    char * prt;
+	char * prt;
 
-    if (size == 0)
-    {
-        return (NULL);
-    }
+	if (size == 0)
+	{
+		return (NULL);
+	}
 
-    prt = (char *)malloc(sizeof(char) * size);
+	prt = (char *)malloc(sizeof(char) * size);
 
-    if (prt == NULL)
-    {
-        return (NULL);
-    }
-    
-    for (unsigned int i = 0; i < size; i++)
-    {
-        prt[i] = c;
-    }
-    
+	if (prt == NULL)
+	{
+		return (NULL);
+	}
+	
+	unsigned int i;
 
-    return (prt);
+	for (i = 0; i < size; i++)
+	{
+		prt[i] = c;
+	}
+	
+
+	return (prt);
 }
