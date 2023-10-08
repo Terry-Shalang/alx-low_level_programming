@@ -7,7 +7,7 @@
  * str_concat - function that concatenates two strings
  * @s1: char array 1
  * @s2: char array 2
- * 
+ *
  * Return: NULL if memory failed otherwise contatenated string
 */
 
@@ -15,7 +15,7 @@ char *str_concat(char *s1, char *s2)
 {
 	size_t len_s1;
 	size_t len_s2;
-	unsigned int comb_len;
+	size_t comb_len;
 	unsigned int i;
 	char *ptr;
 
@@ -36,13 +36,16 @@ char *str_concat(char *s1, char *s2)
 
 	for (i = 0; i < len_s1; i++)
 	{
-		s1[i] = ptr[i];
+		ptr[i] = s1[i];
 	}
 
 	for (i = 0; i < len_s2; i++)
 	{
-		s2[i] = ptr[(len_s1 + 1) + i];
+		ptr[len_s1 + i] = s2[i]; 
 	}
+
+	ptr[comb_len] = '\0';
 
 	return (ptr);
 }
+
