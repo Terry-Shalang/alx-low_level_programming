@@ -4,18 +4,18 @@
 #include <string.h>
 
 /**
- * _strdup - function that returns a pointer to a newly allocated space 
+ * _strdup - function that returns a pointer to a newly allocated space
  * in memory, which contains a copy of the string given as a parameter
- * @str - char array
- * 
- * Return - pointer to a newly allocated space in memory
+ * @str: char array
+ *
+ * Return: pointer to a newly allocated space in memory
  */
 
 char *_strdup(char *str)
 {
 	char *ptr;
 	unsigned int i;
-	unsigned int len = sizeof(str);
+	unsigned int len = strlen(str);
 
 	ptr = (char *)malloc(sizeof(char) * len);
 
