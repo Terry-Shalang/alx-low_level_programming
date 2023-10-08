@@ -15,12 +15,14 @@ char *_strdup(char *str)
 {
 	char *ptr;
 	unsigned int i;
-	size_t len = strlen(str);
+	size_t len;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
+
+    len = strlen(str);
 
 	ptr = (char *)malloc(sizeof(char) * (len + 1));
 
@@ -29,7 +31,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	for (i = 0; i <= len; i++)
+	for (i = 0; i < len; i++)
 	{
 		*(ptr + i) = str[i];
 	}
