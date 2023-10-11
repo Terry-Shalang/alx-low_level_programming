@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * array_iterator - function that prints a name.
+ * int_index -  function that searches for an integer.
  * @array: array to be actioned on
  * @size: size of the array
  * @cmp: Pointer to action function
