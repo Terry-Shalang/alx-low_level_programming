@@ -11,7 +11,7 @@
  *
  * Return: 1 if a non-integer is passed in arguments 0 otherwise
 */
-int func(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int i, sum = 0;
 
