@@ -11,7 +11,7 @@
  * Return: 1 if a non-integer is passed in arguments 0 otherwise
 */
 int main(int argc, char *argv[])
-{   
+{
 	int i, sum;
 
 	for (i = 1; i < argc; i++)
@@ -27,6 +27,6 @@ int main(int argc, char *argv[])
 		}
 
 	}
-	
+
 	return (0);
 }
