@@ -11,23 +11,31 @@
  *
  * Return: 1 if a non-integer is passed in arguments 0 otherwise
 */
-int main(int argc, char *argv[])
+int func(int argc, char *argv[])
 {
-	int i, sum;
+	int i, sum = 0;
 
-	for (i = 1; i < argc; i++)
+	if (argc < 1)
 	{
-		if (isdigit(*(*(argv + i))))
-		{
-			printf("Error\n");
-			return (1);
-		}
-		else
-		{
-			sum += atoi(argv[i]);
-		}
-
+		printf("0");
 	}
-
+	else
+	{
+		for (i = 1; i < argc; i++)
+		{
+			if (isdigit(*(argv[i])) == 0)
+			{
+				printf("Error\n");
+				return (1);
+			}
+			else
+			{
+				sum += atoi(argv[i]);
+			}
+		}
+		printf("%d", sum);
+	}
 	return (0);
 }
+
+
